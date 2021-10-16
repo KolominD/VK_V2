@@ -67,53 +67,84 @@ public class Post {
 
     // Отметка о добавлении в закладки у текущего пользователя (Документация)
 
-    public void textComments(){
+    public void textComments() {
         CommentsInfo com = new CommentsInfo();
         String test = com.getText();
     }
-    public void regComments(){
+
+    public void regComments() {
         CommentsInfo com = new CommentsInfo();
         boolean reg = com.getReg();
     }
-    public void DataAndTimeComments(){
+
+    public void DataAndTimeComments() {
         CommentsInfo com = new CommentsInfo();
         int DataAndTime = com.getDataAndTime();
     }
-    public void ownderIdComments(){
+
+    public void ownerIdComments() {
         CommentsInfo com = new CommentsInfo();
         int ownerId = com.getOwnerId();
     }
-    public void countLikes(){
+
+    public void canPostComments() {
+        CommentsInfo com = new CommentsInfo();
+        boolean canPost = com.isCanPost();
+    }
+
+    public void canGroupsPostComments() {
+        CommentsInfo com = new CommentsInfo();
+        boolean canGroupsPost = com.isGroupsCanPost();
+    }
+
+    public void canOpenComments() {
+        CommentsInfo com = new CommentsInfo();
+        boolean canOpen = com.isCanOpen();
+    }
+
+    public void canCloseComments() {
+        CommentsInfo com = new CommentsInfo();
+        boolean canClose = com.isCanClose();
+    }
+
+    public void countLikes() {
         LikesInfo like = new LikesInfo();
         int count = like.getCount();
     }
-    public void ownerIdLikes(){
+
+    public void userLikes() {
         LikesInfo like = new LikesInfo();
-        int ownerId = like.getOwnerId();
+        boolean userLikes = like.isUserLikes();
     }
-    public void dataAndTimeLikes(){
+
+    public void canLike() {
         LikesInfo like = new LikesInfo();
-        int dataAndTime = like.getDataAndTime();
+        boolean userLikes = like.isCanLike();
     }
-    public void countViews(){
+
+    public void countViews() {
         ViewsInfo view = new ViewsInfo();
         int count = view.getCount();
     }
-    public void viewerId(){
+
+    public void viewerId() {
         ViewsInfo view = new ViewsInfo();
         int viewerId = view.getViewersId();
     }
-    public void countOfRepost(){
+
+    public void countOfRepost() {
         RepostsInfo rep = new RepostsInfo();
         int countOfRepost = rep.getCountOfRepost();
     }
-    public void reporterId(){
+
+    public void canPublish() {
         RepostsInfo rep = new RepostsInfo();
-        int reporterId = rep.getReporterId();
+        boolean canPublish = rep.isCanPublish();
     }
-    public void dataAndTimeOfReporter(){
+
+    public void userReposted() {
         RepostsInfo rep = new RepostsInfo();
-        int dataAndTimeOfReporter = rep.getDataAndTime();
+        boolean userReposted = rep.isUserReposted();
     }
 
 }

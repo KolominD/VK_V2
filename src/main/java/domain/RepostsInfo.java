@@ -2,8 +2,8 @@ package domain;
 
 public class RepostsInfo {
     private int countOfRepost;
-    private int reporterId;
-    private int dataAndTime;
+    private boolean canPublish;
+    private boolean userReposted;
 
     public int getCountOfRepost() {
         return countOfRepost;
@@ -13,19 +13,19 @@ public class RepostsInfo {
         this.countOfRepost = countOfRepost;
     }
 
-    public int getReporterId() {
-        return reporterId;
+    public boolean isCanPublish() {
+        return canPublish;
     }
 
-    public void setReporterId(int reporterId) {
-        this.reporterId = reporterId;
+    public void setCanPublish(boolean canPublish) {
+        this.canPublish = canPublish;
     }
 
-    public int getDataAndTime() {
-        return dataAndTime;
+    public boolean isUserReposted() {
+        return userReposted;
     }
 
-    public void setDataAndTime(int dataAndTime) {
-        this.dataAndTime = dataAndTime;
+    public void setUserReposted(boolean userReposted) {
+        this.userReposted = userReposted;
     }
 }
